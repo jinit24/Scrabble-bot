@@ -7,9 +7,9 @@ git clone https://github.com/jinit24/Scrabble-bot
 cd Scrabble-bot
 python3 bot.py
 ````
-I've set it up to play against itself, so it'll keep making moves.Both the players here are the bot itself.   
+I've set it up to play against itself, so it'll keep making moves. Both the players here are the bot itself.   
 After the game is over, it'll show you stats of the game.  
-Setting up of the UI is left, so its a little tedious to let the user make moves one by one.
+Setting up of the UI is left, so its a little tedious to let the user make moves.
 
 # Targets
 Right now the best move is chosen through brute force searching through all possible options.   
