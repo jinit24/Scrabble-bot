@@ -94,5 +94,4 @@ def traverse_word(current_node, word, tiles, intial_word = ""):
 	if(current_node.word_ends > 0):
 		word_list.append(word_formed)
 
-
 	return  word_list
