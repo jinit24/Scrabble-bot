@@ -22,4 +22,18 @@ Rigorous testing of the algorithm is left. (If you have ideas on how do this ope
 
 
 # Game 
-![alt text](https://github.com/jinit24/Scrabble-bot/blob/main/sample_game.png?raw=true)
+![sample_game](https://user-images.githubusercontent.com/45783917/116738002-83f47700-aa0f-11eb-9a29-e02a8e5f8b96.png)
+This shows a snapshot in between the game. 
+
+
+# Random Stats 
+
+|         |Bot as Player 1  | Bot as Player 2  |
+| :-----: | :-: | :-: |
+|Average points per game | 410.11 | 392.88 |
+|Average Bingos per game | 0.6 | 0.63 |
+|Average time taken per move | 1.45s | 1.52s |
+|Average moves per game |  13.08 | 12.63|
+|Average points per move | 31.35 | 31.10 |
+
+I played the bot against itself for 100 games and above are the results.
