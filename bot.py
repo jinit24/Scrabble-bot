@@ -5,10 +5,12 @@ from best_word import *
 def initialise():
 	
 	start = time.time()
-	insert_words("Collins Scrabble Words (2019).txt", prefix_trie)
-	print("Time taken to insert words : ", time.time() - start)
 	board =  [[" " for x in range(15)] for y in range(15)]
 	prefix_trie = node()
+
+	insert_words("Collins Scrabble Words (2019).txt", prefix_trie)
+	print("Time taken to insert words : ", time.time() - start)
+
 	return [board, prefix_trie]
 
 def get_best_word(board, tiles):
@@ -29,7 +31,7 @@ def get_best_word(board, tiles):
 	return best
 
  
-board, prefix_tree = initialise()
+board, prefix_trie = initialise()
 
 points = [0,0]
 bingos = [0,0]

@@ -429,7 +429,7 @@ def get_down_all_words(prefix_trie, board, tiles):
 	return best_word
 
 
-def get_best_word(board, tiles):
+def get_best_word(prefix_trie, board, tiles):
 
 	best = get_down_all_words(prefix_trie, board, tiles)
 
