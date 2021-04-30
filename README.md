@@ -3,7 +3,7 @@ Scrabble-bot predicts the best move for a given board position.
 
 # Playing the bot
 ```
-https://github.com/jinit24/Scrabble-bot
+git clone https://github.com/jinit24/Scrabble-bot
 cd Scrabble-bot
 python3 bot.py
 ````
@@ -23,7 +23,6 @@ Rigorous testing of the algorithm is left. (If you have ideas on how do this ope
 
 # Game 
 ![sample_game](https://user-images.githubusercontent.com/45783917/116738002-83f47700-aa0f-11eb-9a29-e02a8e5f8b96.png)
-This shows a snapshot in between the game. 
 
 
 # Random Stats 
