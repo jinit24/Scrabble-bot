@@ -18,12 +18,13 @@ Also because the game has incomplete information, it will be difficult to use st
  
 Adding an UI would be helpful, if the user wants to play against the bot.
 
-Rigorous testing of the algorithm is left. (If you have ideas on how do this open a pull request and we can discuss it)
+Rigorous testing of the algorithm is left. (If you have ideas on how do this open a pull request and we can discuss it)  
 
+Incorporating the blank tile is left.
 
 # Game 
-![sample_game](https://user-images.githubusercontent.com/45783917/116738002-83f47700-aa0f-11eb-9a29-e02a8e5f8b96.png)
-This is a snapshot when the game is midway.
+![sample_game](https://user-images.githubusercontent.com/45783917/116738002-83f47700-aa0f-11eb-9a29-e02a8e5f8b96.png)  
+This is a snapshot when the game is midway. You can see the available tiles, move made, its position and points for it.
 
 # Random Stats 
 
