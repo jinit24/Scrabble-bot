@@ -1,5 +1,5 @@
 # Scrabble-bot
-Scrabble-bot predicts the best move for a given board position. 
+A simple bot that plays scrabble. It predicts the best move for a given board position. 
 
 # Playing the bot
 ```
