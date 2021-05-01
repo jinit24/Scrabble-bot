@@ -13,7 +13,7 @@ Setting up of the UI is left, so its a little tedious to let the user make moves
 
 # Targets
 Right now the best move is chosen through brute force searching through all possible options.   
-This causes issues when it opens up a triple word or triple letter for the oponent. So in the next version will try to quantify that.  
+This causes issues when it opens up a triple word or triple letter for the opponent. So in the next version will try to quantify that.  
 Also because the game has incomplete information, it will be difficult to use standard algorithms like Minimax.  
  
 Adding an UI would be helpful, if the user wants to play against the bot.
