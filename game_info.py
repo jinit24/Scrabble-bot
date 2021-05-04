@@ -1,3 +1,4 @@
+
 position_points = ['T..d...T...d..T',
 					'.D...t...t...D.',
 					'..D...d.d...D..',
@@ -24,18 +25,6 @@ BLUE =  '\033[34m' # BLUE Text
 PURPLE  =  '\033[35m' # PURPLE Text
 CYAN  =  '\033[36m' # CYAN Text
 WHITE  =  '\033[47m' # WHITE Background
-
-def play_word(board, word, start_position, direction = "Down"):
-	
-	row = start_position[0]
-	col = start_position[1]
-
-	for char in word:
-		board[row][col] = char
-		if(direction == 'Down'):
-			row = row + 1
-		else:
-			col = col + 1
 
 
 

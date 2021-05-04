@@ -109,7 +109,7 @@ def get_word_on_right(board, start_point):
 
 	return s
 
-def get_points(start_position, end_position, word, new_char_pos = None, direction = 'Down'):
+def get_points(start_position, end_position, word, new_char_pos = None, direction = 'down'):
 
 	letter_value = letter_values
 
@@ -120,7 +120,7 @@ def get_points(start_position, end_position, word, new_char_pos = None, directio
 		points = points + letter_value[char]
 
 	k = 0
-	if(direction == "Right"):
+	if(direction == "right"):
 		k = 1
 
 	for pos in new_char_pos:
@@ -147,7 +147,7 @@ def get_points(start_position, end_position, word, new_char_pos = None, directio
 
 	return [points, new_chars]
 
-def get_other_words(prefix_trie, board, word, start_position, end_position, old_character_pos = [], direction = 'Down'):
+def get_other_words(prefix_trie, board, word, start_position, end_position, old_character_pos = [], direction = 'down'):
 
 	length = end_position[0] - start_position[0] + 1
 
@@ -176,11 +176,12 @@ def get_other_words(prefix_trie, board, word, start_position, end_position, old_
 		if(prefix_trie.check_word(word_formed)):
 
 			s_position = (current_row, current_col - len(word_on_left))
-			e_position   = (current_row , current_col + len(word_on_right))
+			e_position = (current_row , current_col + len(word_on_right))
 
-			p = get_points(s_position, e_position, word_formed, new_char_pos = [(current_row, current_col)], direction = "Right")
+			p = get_points(s_position, e_position, word_formed, new_char_pos = [(current_row, current_col)], direction = "right")
 			arr.append(word_formed)
 			points = points + p[0]
+			
 		else:
 			return -1
 
@@ -294,7 +295,7 @@ def get_separated_words(prefix_trie, board, tiles):
 
 	return best_word
 
-def get_words(prefix_trie, board, position, tiles, min_length = 1, direction = 'Down'):
+def get_words(prefix_trie, board, position, tiles, min_length = 1, direction = 'down'):
 
 	occupied_positions = get_occupied_positions(board)
 	x,y = position
