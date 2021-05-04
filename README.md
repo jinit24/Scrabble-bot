@@ -15,7 +15,7 @@ After the game is over, it'll show you stats of the game.
 1. To play a word, use the arrows to go to the desired place.   
 2. Then type the letter. If the word is invalid according to the rules, it'll show you the word.  
 3. Press enter the play your word.  
-4. Press space too skip your turn and ESC to quit the game.  
+4. Press space to skip your turn and ESC to quit the game.  
 
 
 # Goals
