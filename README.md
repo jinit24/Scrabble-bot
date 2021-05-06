@@ -3,7 +3,7 @@ A simple bot that plays scrabble. It predicts the best move for a given board po
 
 # Playing the bot
 ```
-git clone https://github.com/jinit24/Scrabble-bot
+git clone -b 'main' https://github.com/jinit24/Scrabble-bot
 cd Scrabble-bot
 python3 bot.py
 ````
