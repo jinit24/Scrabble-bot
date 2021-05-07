@@ -11,16 +11,16 @@ I've set it up to play against itself, so it'll keep making moves. Both the play
 After the game is over, it'll show you stats of the game.  
 Setting up of the UI is left, so its a little tedious to let the user make moves.
 
-# Targets
-Right now the best move is chosen through brute force searching through all possible options.   
+# Goals
+1. Right now the best move is chosen through brute force searching through all possible options.   
 This causes issues when it opens up a triple word or triple letter for the opponent. So in the next version will try to quantify that.  
 Also because the game has incomplete information, it will be difficult to use standard algorithms like Minimax.  
  
-Adding an UI would be helpful, if the user wants to play against the bot.
+2. Adding an UI would be helpful, if the user wants to play against the bot.
 
-Rigorous testing of the algorithm is left. (If you have ideas on how do this open a pull request and we can discuss it)  
+3. Rigorous testing of the algorithm is left. (If you have ideas on how do this open a pull request and we can discuss it)  
 
-Incorporating the blank tile is left.
+4. Incorporating the blank tile is left.
 
 # Game 
 ![sample_game](https://user-images.githubusercontent.com/45783917/116738002-83f47700-aa0f-11eb-9a29-e02a8e5f8b96.png)  
