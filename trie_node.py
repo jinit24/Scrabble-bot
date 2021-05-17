@@ -1,5 +1,8 @@
 from collections import defaultdict
+from string import ascii_lowercase
 import copy
+
+dicts = dict(zip(ascii_lowercase, range(0,26)))
 
 class node():
 
@@ -7,20 +10,17 @@ class node():
 
 		self.children = [None]*26
 		self.word_ends = 0
-		self.depth = 0
 
 	def insert(self, word):
 
 		for char in word:
-
-			index = ord(char) - ord('a')
+			index = dicts[char]
 			if(self.children[index] == None):
 				self.children[index] = node()
 
-			self.children[index].depth = self.depth + 1
 			self = self.children[index]
 
-		self.word_ends = self.word_ends + 1
+		self.word_ends = 1
 		return
 
 
@@ -28,7 +28,7 @@ class node():
 
 		for char in word:
 
-			index = ord(char) - ord('a')
+			index = dicts[char]
 			if(self.children[index] == None):
 				return False
 
@@ -40,13 +40,13 @@ class node():
 
 		for i in range(len(word)):
 
-			index = ord(word[i]) - ord('a')
+			index = dicts[word[i]]
 			if(self.children[index] == None):
-				return word[:i]
+				return i
 
 			self = self.children[index]
 
-		return word 
+		return len(word) 
 
 
 def traverse_word(current_node, word, tiles, intial_word = ""):
@@ -55,6 +55,9 @@ def traverse_word(current_node, word, tiles, intial_word = ""):
 	word_formed = intial_word
 
 	if(len(word) == 0):
+		if(len(word_formed)>0 and current_node.word_ends > 0):
+			return [word_formed]
+
 		return []
 
 	char = word[0]
@@ -65,11 +68,10 @@ def traverse_word(current_node, word, tiles, intial_word = ""):
 
 			if(tiles[key] > 0):
 
-				index = ord(key) - ord('a')
+				index = dicts[key]
 				if(current_node.children[index] == None):
 					continue
 
-				# current_node = current_node.children[index]
 				tiles[key] = tiles[key] - 1
 				word_list.extend(traverse_word(current_node.children[index], word[1:], tiles, word_formed + key))	
 				tiles[key] = tiles[key] + 1
@@ -81,7 +83,7 @@ def traverse_word(current_node, word, tiles, intial_word = ""):
 		while( i < len(word) and word[i] != "*" ):
 
 			char = word[i]
-			index = ord(char) - ord('a')
+			index = dicts[char]
 			if(current_node.children[index] == None):
 				return  word_list
 			word_formed = word_formed + char

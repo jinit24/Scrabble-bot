@@ -1,6 +1,8 @@
 from best_word import *
 from collections import defaultdict
 
+
+
 def check_word(prefix_trie, board, tiles, word, start_position, direction, first_move):
 
 	row,col = start_position[0], start_position[1]
