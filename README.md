@@ -1,30 +1,40 @@
 # Scrabble-bot
-A simple bot that plays scrabble. It predicts the best move for a given board position. 
+A simple bot that plays scrabble. It predicts the best move for a given board position.  
+If you're looking to play with the bot head over to : <a href = "https://github.com/jinit24/Scrabble-bot"> New-ui </a>
 
-# Playing with the bot
+# Playing the bot
 ```
-git clone -b 'new-ui' https://github.com/jinit24/Scrabble-bot
+git clone -b 'opponent_modelling' https://github.com/jinit24/Scrabble-bot
 cd Scrabble-bot
-python3 game.py
+python3 bot.py
 ````
-I've made a UI using curses. The user is set up as the first player.  
-After the game is over, it'll show you stats of the game.   
-
-![Screenshot from 2021-05-04 17-00-24](https://user-images.githubusercontent.com/45783917/116997660-b5fd2600-acfa-11eb-81fb-4d5f4d13ad7c.png)
-
-1. To play a word, use the arrows to go to the desired place.   
-2. Then type the letter. If the word is invalid according to the rules, it'll show you the word.  
-3. Press enter the play your word.  
-4. Press space to skip your turn and ESC to quit the game.  
-
+I've set it up to play against itself, so it'll keep making moves. Both the players here are the bot itself.  
+Player 0 is playing greedily and player 1 is using opponent modelling.
+After the game is over, it'll show you stats of the game.  
 
 # Goals
-Right now the best move is chosen through brute force searching through all possible options.   
+1. Right now the best move is chosen through brute force searching through all possible options.   
 This causes issues when it opens up a triple word or triple letter for the opponent. So in the next version will try to quantify that.  
 Also because the game has incomplete information, it will be difficult to use standard algorithms like Minimax.  
  
-Rigorous testing of the algorithm is left. (If you have ideas on how do this open a pull request and we can discuss it)  
+2. Adding an UI would be helpful, if the user wants to play against the bot.
 
-Incorporating the blank tile is left.
+3. Rigorous testing of the algorithm is left. (If you have ideas on how do this open a pull request and we can discuss it)  
 
-Any suggestions on the game or the UI is welcome. 
+4. Incorporating the blank tile is left.
+
+# Game 
+![sample_game](https://user-images.githubusercontent.com/45783917/116738002-83f47700-aa0f-11eb-9a29-e02a8e5f8b96.png)  
+This is a snapshot when the game is midway. You can see the available tiles, move made, its position and points for it.
+
+# Random Stats 
+
+| Bot vs Bot                 |Bot as Player 1  | Bot as Player 2  |
+| :-----:                    | :-:             | :-:              |
+|Average points per game     | 410.11          | 392.88           |
+|Average Bingos per game     | 0.6             | 0.63             |
+|Average time taken per move | 1.45s           | 1.52s            |
+|Average moves per game      |  13.08          | 12.63            |
+|Average points per move     | 31.35           | 31.10            |
+
+I played the bot against itself for 100 games and above are the results.
