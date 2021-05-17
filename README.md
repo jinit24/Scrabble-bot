@@ -23,12 +23,18 @@ This is a snapshot when the game is midway. You can see the moves made, and fina
 
 # Random Stats 
 
-| Bot vs Bot                 |Bot as Player 1  | Bot as Player 2  |
-| :-----:                    | :-:             | :-:              |
-|Average points per game     | 410.11          | 392.88           |
-|Average Bingos per game     | 0.6             | 0.63             |
-|Average time taken per move | 1.45s           | 1.52s            |
-|Average moves per game      |  13.08          | 12.63            |
-|Average points per move     | 31.35           | 31.10            |
+Bot with Opp Modelling
+Average Points Lost    	    :  -13.16
+Average Potential upside    :  5.64
 
-I played the bot against itself for 100 games and above are the results.
+| Bot vs Bot                 |Greedy Bot       | Bot with Opp Modelling  |
+| :-----:                    | :-:             | :-:              |
+|Total Wins                  | 12              | 13               |
+|Average points per game     | 419.56          | 412.16           |
+|Average Bingos per game     | 1.4             | 1.2              |
+|Average time taken per move | 0.18s           | 9.72s            |
+|Average moves per game      | 12.6            | 12.6             |
+|Average points per move     | 33.29           | 32.71            |
+
+
+I played the two bots against each other for 25 games.
