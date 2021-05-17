@@ -13,19 +13,13 @@ Player 0 is playing greedily and player 1 is using opponent modelling.
 After the game is over, it'll show you stats of the game.  
 
 # Goals
-1. Right now the best move is chosen through brute force searching through all possible options.   
-This causes issues when it opens up a triple word or triple letter for the opponent. So in the next version will try to quantify that.  
-Also because the game has incomplete information, it will be difficult to use standard algorithms like Minimax.  
+1. The opponent modelling right now uses sampling. So from the tiles left it samples tiles possible for the opponent. Based on the possible move for me, it checks whether the opponent is able to make a better move. Its difficult to make sure if this is working because you don't know the opponent's tiles and sometimes you might end up aiding the opponent. Incomplete information is the issue.
  
-2. Adding an UI would be helpful, if the user wants to play against the bot.
-
-3. Rigorous testing of the algorithm is left. (If you have ideas on how do this open a pull request and we can discuss it)  
-
-4. Incorporating the blank tile is left.
+2. Incorporating the blank tile is left.
 
 # Game 
-![sample_game](https://user-images.githubusercontent.com/45783917/116738002-83f47700-aa0f-11eb-9a29-e02a8e5f8b96.png)  
-This is a snapshot when the game is midway. You can see the available tiles, move made, its position and points for it.
+![Screenshot from 2021-05-17 19-25-02](https://user-images.githubusercontent.com/45783917/118500836-c1fad600-b745-11eb-8085-daef71a57777.png)
+This is a snapshot when the game is midway. You can see the moves made, and final score.
 
 # Random Stats 
 
