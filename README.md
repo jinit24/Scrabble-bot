@@ -23,9 +23,9 @@ This is a snapshot when the game is midway. You can see the moves made, and fina
 
 # Random Stats 
 
-Bot with Opp Modelling
-Average Points Lost    	    :  -13.16
-Average Potential upside    :  5.64
+### Bot with Opp Modelling  
+Average Points Lost    	    :  -13.16  
+Average Potential upside    :  5.64   
 
 | Bot vs Bot                 |Greedy Bot       | Bot with Opp Modelling  |
 | :-----:                    | :-:             | :-:              |
