@@ -140,7 +140,7 @@ For example, here * can represent any character present in the tiles
   Case 1 : word = "\*\*\*\*t"   
   Case 2 : word = "st\*\*"   
   Case 3 : word = "\*\*\*\*\*\*"   
-  Case 1 : word = "\*\*t\*e\*"   
+  Case 4 : word = "\*\*t\*e\*"   
 You can check the function "traverse_word" in trie_node.py
 
 # Putting it together
