@@ -1,6 +1,7 @@
 # Scrabble-bot
 A simple bot that plays scrabble. It predicts the best move for a given board position.  
 If you're looking to play with the bot head over to : <a href = "https://github.com/jinit24/Scrabble-bot"> New-ui </a>
+<a href="https://jinit24.github.io/Scrabble-bot/">Documentation</a> : this discusses the idea behind the bot and explanation of the code.
 
 # Playing the bot
 ```
