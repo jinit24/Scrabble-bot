@@ -4,5 +4,5 @@ title: Scrabble-bot
 description: A simple bot that plays scrabble. It predicts the best move for a given board position.
 search_enabled: false
 aux_links:
-  "Just the Docs on GitHub":
-    - "//github.com/pmarsceill/just-the-docs"
+  "Scrabble-Bot on GitHub":
+    - "https://github.com/jinit24/Scrabble-bot"
