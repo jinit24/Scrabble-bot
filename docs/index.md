@@ -195,11 +195,13 @@ Similarly it is possible to have more than 1 tile at the top as well. Hence, wor
 Form the regex pattern. (You could also use the permutations idea check the get_words function in best_word.py in 'main' branch)   
 
 Case 1,2,3:
+
 ```python3
 word_form_regex  = word_on_top + "*"*(length+1) + word_on_bottom
 ```
 
 Case 4:
+
 ```python3
 new_letters_added = 0
 word_formed = ""
@@ -257,7 +259,7 @@ def traverse_word(current_node, word, tiles, intial_word = ""):
 			index = dicts[char]
 			if(current_node.children[index] == None):
 				return  word_list
-    
+
 			word_formed = word_formed + char
 			current_node = current_node.children[index]
 			i = i + 1
@@ -294,6 +296,5 @@ To finally get the best word you'll have to find the best word in up-down direct
 * **get_other_words** finds the extra word formed in the left to right direcition. Called by get_words.   
  
 
-I really enjoyed doing this project. I have only described the greedy bot here. I'm working on one that has opponent modelling, interesting stuff.
-
+I really enjoyed doing this project. I have only described the greedy bot here. I'm working on one that has opponent modelling, interesting stuff.   
 If you wish to discuss any ideas please feel free to mail me at : dornumofficial@gmail.com
