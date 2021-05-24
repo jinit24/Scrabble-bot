@@ -36,7 +36,7 @@ For the examples - <strong> New letters placed are shown in uppercase. </strong>
 
 
 ## Case 1 : End Point
-```py
+```js
 |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | 
 ------------------------------------------------------------
 |   |   |   |   |   |   |   |   | N |   |   |   |   |   |   | 
@@ -53,7 +53,7 @@ exist is a word that was already on the board.
 We play a new word NEWt (End point 't' is already on the board)  
 
 ## Case 2 : Starting Point
-```py
+```js
 |   |   |   |   | e | x | i | s | t |   |   |   |   |   |   | 
 ------------------------------------------------------------
 |   |   |   |   |   |   |   | N |   |   |   |   |   |   |   | 
@@ -71,7 +71,7 @@ We play a new word sNEW (starting point 's' is already on the board)
 
 
 ## Case 3 : Side-On
-```py
+```js
 |   |   |   |   |   |   |   |   |   | N |   |   |   |   |   | 
 ------------------------------------------------------------
 |   |   |   |   |   |   |   |   |   | E |   |   |   |   |   | 
@@ -89,7 +89,7 @@ We play a new word NEST (letter 'S' is connected to a word on the board).
 Here NEST could also be played in front forming Sexist and NEST. Both of which are acceptable words.  
 
 ## Case 4 : In Between
-```py
+```js
 |   |   |   |   |   |   |   | H |   |   |   |   |   |   |   | 
 ------------------------------------------------------------
 |   |   |   |   |   |   |   | A |   |   |   |   |   |   |   | 
@@ -108,7 +108,7 @@ We play a new word HAsHeS. (letter 's' and 'e' were already on the board, we pla
 # Making words
 For a given set of letters we now want to make words. Based on the above 4 cases, we have some extra information to accomodate.
 Importantly for each word once we place it we have to check if extra words are formed in the left to right direction.
-```py
+```js
 |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | 
 ------------------------------------------------------------
 |   |   |   |   |   |   |   |   | N |   |   |   |   |   |   | 
@@ -171,7 +171,7 @@ A separate case needs to be made when there are no tiles on the board (first tur
 ## Step 2 
 {: .no_toc }
 For each case, find out word on top and word on bottom. 
-```py
+```js
 ------------------------------------------------------------
 |   |   |   |   |   |   |   | C |   |   |   |   |   |   |   | 
 ------------------------------------------------------------
