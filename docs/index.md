@@ -6,6 +6,16 @@ This documentation explains the general idea behind the code and an explanation 
 4. <a href = "#putting-it-together">Putting it together</a> 
 5. <a href = "#function-description">Function Description</a> 
 
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+
 If you're looking to play with the bot head over to <a href="https://github.com/jinit24/Scrabble-bot"> Bot </a>.  
 # Checking Words
 {:toc}
