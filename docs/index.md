@@ -159,6 +159,7 @@ First we need to find out all the positions where a letter already exists.
 All its neighbouring positions are our matter of concern. Let's say (x,y) is one of positions  
  
 ## Step 1 
+{: .no_toc }
 Case 1:   
 We iterate from (x-1,y) to (x-7,y) or till we hit an existing tile. Make sure the minimum length of word formed is such that it ends at (x,y)
 
@@ -175,6 +176,7 @@ The above case handling is done in  **get_down_all_words** function in **best_wo
 A separate case needs to be made when there are no tiles on the board (first turn of the game). You have to make sure to use (7,7) accordingly fix x = 7 and y = 7 in the case 1 and case 2.
 
 ## Step 2 
+{: .no_toc }
 For each case, find out word on top and word on bottom. 
 ```
 ------------------------------------------------------------
@@ -196,6 +198,7 @@ Notice that there is more than 1 tile at the bottom of the word - 'st'.
 Similarly it is possible to have more than 1 tile at the top as well. Hence, word on top and word on bottom is the terminology.   
 
 ## Step 3
+{: .no_toc }
 Form the regex pattern. (You could also use the permutations idea check the get_words function in best_word.py in 'main' branch)   
 
 Case 1,2,3:
@@ -224,6 +227,7 @@ word_form_regex  = word_on_top + word_formed
 ```
 
 ## Step 4 
+{: .no_toc }
 Find all possible words. The traverse_word function is in the trie_node.py.
 This is where most of the magic happens. Based on the regex passed it returns a list of words possible.
 
@@ -277,17 +281,20 @@ def traverse_word(current_node, word, tiles, intial_word = ""):
 ```
 
 ## Step 5
+{: .no_toc }
 For each find out other words formed on left to right and check its validity. If all words formed are valid then return words formed and their points.    
 This is done in **get_other_words** function in **best_word.py** in opponnent_modelling branch.    
 word on right and word on left have the same idea as word on top and word on bottom.     
 
 ## Step 6
+{: .no_toc }
 Calculating the points is a little tricky. You have to only consider words that contain at least one new letter.   
 Based on the position of the tiles placed you might get a double letter or double word or triple letter or triple word.    
 All this is taken into account in **get_points** function in **best_word.py** in opponnent_modelling branch.    
 Return the word which has the highest points.    
 
 ## Step 7
+{: .no_toc }
 To finally get the best word you'll have to find the best word in up-down direction then flip the board, repeat the same procedure, compare the best words and flip the board back again.
 
 
