@@ -209,7 +209,7 @@ word_form_regex  = word_on_top + "*"*(length+1) + word_on_bottom
 
 Case 4:
 
-```
+```python
 new_letters_added = 0
 word_formed = ""
 
@@ -231,7 +231,7 @@ word_form_regex  = word_on_top + word_formed
 Find all possible words. The traverse_word function is in the trie_node.py.
 This is where most of the magic happens. Based on the regex passed it returns a list of words possible.
 
-```
+```py
 def traverse_word(current_node, word, tiles, intial_word = ""):
 	
 	word_list = []
