@@ -18,7 +18,6 @@ We need a dictionary to check whether the words formed are valid or not.
 I could improve this by using <a href="https://en.wikipedia.org/wiki/Deterministic_acyclic_finite_state_automaton"> DAFSA</a> as data is static. I haven't implemented it though. 
 
 # Placing Words
-{:toc}
 I'll be only considering words than are made in the up-down direction because I can flip the board and use the same algorithm to get words made from left-right.   
 (You'll have to see why flipping is necessary that is (x,y) => (y,x) and rotating the board 90 degrees will give you incorrect answers)   
 
@@ -109,7 +108,6 @@ exists, exist and slip were already on the board.
 We play a new word HAsHeS. (letter 's' and 'e' were already on the board, we play a word that uses both of them)
 
 # Making words
-{:toc}
 For a given set of letters we now want to make words. Based on the above 4 cases, we have some extra information to accomodate.
 Importantly for each word once we place it we have to check if extra words are formed in the left to right direction.
 ```
@@ -153,7 +151,6 @@ For example, here * can represent any character present in the tiles. In case 4 
 You can check the function "traverse_word" in trie_node.py
 
 # Putting it together
-{:toc}
 First we need to find out all the positions where a letter already exists.   
 All its neighbouring positions are our matter of concern. Let's say (x,y) is one of positions  
  
@@ -291,7 +288,6 @@ To finally get the best word you'll have to find the best word in up-down direct
 
 
 # Function Description
-{:toc}
 **best_word.py** in opponnent_modelling branch
 
 * The separation of cases is done in  **get_down_all_words**, which calls get_words internally.
