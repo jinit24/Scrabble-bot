@@ -300,15 +300,12 @@ To finally get the best word you'll have to find the best word in up-down direct
 # Function Description
 **best_word.py** in opponnent_modelling branch
 
-* The above case handling is done in  **get_down_all_words**, which calls get_words internally.
+* The separation of cases is done in  **get_down_all_words**, which calls get_words internally.
 * The rest of heavylifting of finding words on top, words on bottom, regex formation, calling traverse_word, calling get_points and getting extra words formed is done  in **get_words**.
 * **get_separated_words** separately handles Case 4.
 * **get_other_words** finds the extra word formed in the left to right direcition. Called by get_words.   
  
 
-I really enjoyed doing this project. I have only described the greedy bot here. I tried one with opponet modelling but doesn't have the best results. So I'm still working on that.
+I really enjoyed doing this project. I have only described the greedy bot here. I'm working on one that has opponent modelling, interesting stuff.
 
 If you wish to discuss any ideas please feel free to mail me at : dornumofficial@gmail.com
-
-
-
