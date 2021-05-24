@@ -7,3 +7,4 @@ aux_links:
   "Scrabble-Bot on GitHub":
     - "https://github.com/jinit24/Scrabble-bot"
 aux_links_new_tab: true
+nav_exclude: true
