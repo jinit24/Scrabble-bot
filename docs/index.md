@@ -48,14 +48,13 @@ For the examples - <strong> New letters placed are shown in uppercase. </strong>
 |   |   |   |   | e | x | i | s | t |   |   |   |   |   |   | 
 ------------------------------------------------------------
 |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | 
-
 ```
 exist is a word that was already on the board.   
 We play a new word NEWt (End point 't' is already on the board)  
 
 ## Case 2 : Starting Point
 ```py
-|   |   |   |   | e | x | i | s | t |   |   |  |   |   |   | 
+|   |   |   |   | e | x | i | s | t |   |   |   |   |   |   | 
 ------------------------------------------------------------
 |   |   |   |   |   |   |   | N |   |   |   |   |   |   |   | 
 ------------------------------------------------------------
@@ -66,7 +65,6 @@ We play a new word NEWt (End point 't' is already on the board)
 |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | 
 ------------------------------------------------------------
 |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | 
-
 ```
 exist is a word that was already on the board.   
 We play a new word sNEW (starting point 's' is already on the board)   
@@ -74,7 +72,6 @@ We play a new word sNEW (starting point 's' is already on the board)
 
 ## Case 3 : Side-On
 ```py
-------------------------------------------------------------
 |   |   |   |   |   |   |   |   |   | N |   |   |   |   |   | 
 ------------------------------------------------------------
 |   |   |   |   |   |   |   |   |   | E |   |   |   |   |   | 
@@ -86,7 +83,6 @@ We play a new word sNEW (starting point 's' is already on the board)
 |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | 
 ------------------------------------------------------------
 |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | 
-
 ```
 exist is a word that was already on the board.  
 We play a new word NEST (letter 'S' is connected to a word on the board).    
@@ -94,7 +90,6 @@ Here NEST could also be played in front forming Sexist and NEST. Both of which a
 
 ## Case 4 : In Between
 ```py
-------------------------------------------------------------
 |   |   |   |   |   |   |   | H |   |   |   |   |   |   |   | 
 ------------------------------------------------------------
 |   |   |   |   |   |   |   | A |   |   |   |   |   |   |   | 
@@ -105,8 +100,7 @@ Here NEST could also be played in front forming Sexist and NEST. Both of which a
 ------------------------------------------------------------
 |   |   |   |   |   |   |   | e | x | i | s | t |   |   |   | 
 ------------------------------------------------------------
-|   |   |   |   |   |   |   | S  |   | p |   |   |   |   |   | 
-
+|   |   |   |   |   |   |   | S  |   | p |  |   |   |   |   | 
 ```
 exists, exist and slip were already on the board.  
 We play a new word HAsHeS. (letter 's' and 'e' were already on the board, we play a word that uses both of them)
@@ -123,10 +117,9 @@ Importantly for each word once we place it we have to check if extra words are f
 ------------------------------------------------------------
 |   |   |   |   | y |   |   |   | W |   |   |   |   |   |   | 
 ------------------------------------------------------------
-|   |   |   |   | e | x | i | s | t |   |   |  |   |   |   | 
+|   |   |   |   | e | x | i | s | t |   |   |   |   |   |   | 
 ------------------------------------------------------------
 |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | 
-
 ```
 rats, rye and exist were already on the board. Now suppose I want to play NEWt, but a new word is form ratsE. This is not a word.
 Hence, extra words can be formed which need to be checked if they are valid.
