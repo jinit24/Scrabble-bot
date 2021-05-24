@@ -133,7 +133,7 @@ Hence, extra words can be formed which need to be checked if they are valid.
 Once you fix a length you can find all the permutations possible.    
 In the worst case there are 7!(5040) permutations. This is managable and not really an issue.  
 This is a one-liner in python : 
-```python3
+```
 import itertools
 permutations   = itertools.permutations(tiles, length)
 ```
@@ -196,13 +196,13 @@ Form the regex pattern. (You could also use the permutations idea check the get_
 
 Case 1,2,3:
 
-```python3
+```
 word_form_regex  = word_on_top + "*"*(length+1) + word_on_bottom
 ```
 
 Case 4:
 
-```python3
+```
 new_letters_added = 0
 word_formed = ""
 
@@ -223,7 +223,7 @@ word_form_regex  = word_on_top + word_formed
 Find all possible words. The traverse_word function is in the trie_node.py.
 This is where most of the magic happens. Based on the regex passed it returns a list of words possible.
 
-```python3
+```
 def traverse_word(current_node, word, tiles, intial_word = ""):
 	
 	word_list = []
