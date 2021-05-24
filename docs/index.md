@@ -29,7 +29,7 @@ The word you place on the board has to be connected to some word on the board un
 So there are 4 basic cases : 
 1. End point of new word is on the board
 2. Starting point of new word is on the board
-3. One or more letters of the new word is connected side-on to an exisiting word on the board
+3. One or more letters of the new word is connected side-on to an existing word on the board
 4. New word uses one or more tiles of existing word on the board. (But not case 1 or case 2)
 
 For the examples - <strong> New letters placed are shown in uppercase. </strong>
@@ -114,7 +114,7 @@ exists, exist and slip were already on the board.
 We play a new word HAsHeS. (letter 's' and 'e' were already on the board, we play a word that uses both of them)
 
 # Making words
-For a given set of letters we now want to make words. Based on the above 4 cases, we have some extra information to accomodate.
+For a given set of letters we now want to make words. Based on the above 4 cases, we have some extra information to accommodate.
 Importantly for each word once we place it we have to check if extra words are formed in the left to right direction.
 ```js
 ------------------------------------------------------------
@@ -138,7 +138,7 @@ Hence, extra words can be formed which need to be checked if they are valid.
 ## Initial Idea - Permutations
 
 Once you fix a length you can find all the permutations possible.    
-In the worst case there are 7!(5040) permutations. This is managable and not really an issue.  
+In the worst case there are 7!(5040) permutations. This is manageable and not really an issue.  
 This is a one-liner in python : 
 ```py
 import itertools
@@ -147,7 +147,7 @@ permutations   = itertools.permutations(tiles, length)
 The main branch uses this idea.  
 It's a bigger issue implementing this for case 4. You have to iterate over possible lengths on top and below, which worsens the complexity.  
 
-## Improved Idea - Travesring the trie
+## Improved Idea - Traversing the trie
 This is almost 10x faster than the above idea. Instead we traverse through the trie.   
 So an argument 'word' here is kind of regex.   
 For example, here * can represent any character present in the tiles. In case 4 it can represent an empty tile.      
