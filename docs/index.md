@@ -190,21 +190,7 @@ For each case, find out word on top and word on bottom.
 exist and tart were previously on the board. We play CAst. 
 Notice that there is more than 1 tile at the bottom of the word - 'st'.   
 Similarly it is possible to have more than 1 tile at the top as well. Hence, word on top and word on bottom is the terminology.   
-<!-- 
-```python3
-def get_word_on_top(board, start_point):
 
-	x,y = start_point
-	s = ""
-
-	for i in range(x, -1, -1):
-		if(board[i][y] == " "):
-			break
-		else:
-			s  = board[i][y] + s
-
-	return s
-``` -->
 ## Step 3
 Form the regex pattern. (You could also use the permutations idea check the get_words function in best_word.py in 'main' branch)   
 
@@ -212,6 +198,7 @@ Case 1,2,3:
 ```python3
 word_form_regex  = word_on_top + "*"*(length+1) + word_on_bottom
 ```
+
 Case 4:
 ```python3
 new_letters_added = 0
@@ -229,6 +216,7 @@ while(new_letters_added < len(tiles) and cx < 15):
  cx = cx + 1
 word_form_regex  = word_on_top + word_formed
 ```
+
 ## Step 4 
 Find all possible words. The traverse_word function is in the trie_node.py.
 This is where most of the magic happens. Based on the regex passed it returns a list of words possible.
