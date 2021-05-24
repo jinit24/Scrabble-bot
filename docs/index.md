@@ -1,10 +1,10 @@
 This documentation explains the general idea behind the code and an explanation of it. I'll be explaining the greedy version of the bot - picking the best word from all possible words based on their points.
 
-1. <a href = "/#checking-words">Checking Words</a>
-2. <a href = "/#placing-words"> Placing Words</a>
-3. <a href = "/#making-words">Making Words</a>
-4. <a href = "/#putting-it-together">Putting it together</a> 
-5. <a href = "/#function-description">Function Description</a> 
+1. <a href = "#checking-words">Checking Words</a>
+2. <a href = "#placing-words"> Placing Words</a>
+3. <a href = "#making-words">Making Words</a>
+4. <a href = "#putting-it-together">Putting it together</a> 
+5. <a href = "#function-description">Function Description</a> 
 
 If you're looking to play with the bot head over to <a href="https://github.com/jinit24/Scrabble-bot"> Bot </a>.  
 # Checking Words
