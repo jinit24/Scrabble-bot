@@ -1,4 +1,4 @@
-This documentation explains the general idea behind the code and an explanation of it. I'll be explaining the greedy version of the bot - picking the best word from all possible words based on their points.
+This documentation explains the greedy version of the bot - picking the best option from all possible words based on their points.
 
 <details open markdown="block">
   <summary>
